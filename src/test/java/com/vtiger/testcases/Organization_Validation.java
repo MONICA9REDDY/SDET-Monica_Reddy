@@ -1,4 +1,4 @@
-package com.vtiger.tc;
+package com.vtiger.testcases;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -29,7 +29,7 @@ public class Organization_Validation {
 		String actual =driver.findElement(By.xpath("//td[contains(text(),'Showing Records')][1]")).getText();
 
 		driver.findElement(By.xpath("//img[@title='Create Organization...']")).click();
-		String orgname ="IKEA";
+		String orgname ="Hyundai";
 		Random r = new Random();
 		int x = r.nextInt(100);
 		orgname = orgname + x;

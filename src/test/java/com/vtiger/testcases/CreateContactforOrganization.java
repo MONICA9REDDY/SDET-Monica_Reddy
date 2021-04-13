@@ -1,4 +1,4 @@
-package com.vtiger.tc;
+package com.vtiger.testcases;
 
 import java.util.Iterator;
 import java.util.List;

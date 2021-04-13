@@ -3,6 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="MavenPro_TYSS.MavenPro_TYSS.DataProviderDemo"/>
+      <class name="com.vtiger.testcases.NewCreateContactforOrganization"/>
+      <class name="com.vtiger.testcases.New_Create_Organization"/>
+      <class name="MavenPro_TYSS.MavenPro_TYSS.DataProvider1"/>
       <class name="MavenPro_TYSS.MavenPro_TYSS.AppTest"/>
     </classes>
   </test> <!-- Test -->

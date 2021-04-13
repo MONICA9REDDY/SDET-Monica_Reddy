@@ -1,4 +1,4 @@
-package com.vtiger.tc;
+package com.vtiger.testcases;
 
 import java.util.ArrayList;
 import java.util.List;

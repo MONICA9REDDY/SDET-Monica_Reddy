@@ -1,4 +1,4 @@
-package com.vtiger.tc;
+package com.vtiger.testcases;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -59,3 +59,5 @@ public class Create_Contact {
 		driver.close();
 		}
 		}
+
+
