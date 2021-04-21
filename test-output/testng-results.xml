@@ -2,16 +2,22 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="218537" started-at="2021-04-13T14:14:31Z" finished-at="2021-04-13T14:18:10Z">
+  <suite name="Suite" duration-ms="37622" started-at="2021-04-20T18:11:28 IST" finished-at="2021-04-20T18:12:05 IST">
     <groups>
+      <group name="REGRESSION-TEST">
+        <method signature="NewCreateContactforOrganization.createcontact()[pri:0, instance:com.vtiger.testcases.NewCreateContactforOrganization@536aaa8d]" name="createcontact" class="com.vtiger.testcases.NewCreateContactforOrganization"/>
+      </group> <!-- REGRESSION-TEST -->
+      <group name="SMOKE-TEST">
+        <method signature="NewCreateContactforOrganization.createcontact()[pri:0, instance:com.vtiger.testcases.NewCreateContactforOrganization@536aaa8d]" name="createcontact" class="com.vtiger.testcases.NewCreateContactforOrganization"/>
+      </group> <!-- SMOKE-TEST -->
     </groups>
-    <test name="Default test" duration-ms="218537" started-at="2021-04-13T14:14:31Z" finished-at="2021-04-13T14:18:10Z">
+    <test name="Test" duration-ms="37622" started-at="2021-04-20T18:11:28 IST" finished-at="2021-04-20T18:12:05 IST">
       <class name="com.vtiger.testcases.NewCreateContactforOrganization">
-        <test-method status="PASS" signature="createcontact()[pri:0, instance:com.vtiger.testcases.NewCreateContactforOrganization@691a7f8f]" name="createcontact" duration-ms="218390" started-at="2021-04-13T14:14:31Z" finished-at="2021-04-13T14:18:10Z">
+        <test-method status="PASS" signature="createcontact()[pri:0, instance:com.vtiger.testcases.NewCreateContactforOrganization@536aaa8d]" name="createcontact" duration-ms="37307" started-at="2021-04-20T18:11:28 IST" finished-at="2021-04-20T18:12:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createcontact -->
       </class> <!-- com.vtiger.testcases.NewCreateContactforOrganization -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

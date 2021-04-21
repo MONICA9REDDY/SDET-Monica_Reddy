@@ -27,7 +27,9 @@ package com.vtiger.testcases;
 		FileUtility fu=  new FileUtility();
 		ExcelUtility eu= new ExcelUtility();
 		WebDriverUtility wdu= new WebDriverUtility();
-		@Test
+		
+		@Test(groups= {"SMOKE-TEST","REGRESSION-TEST"})
+		
 		public void createcontact() throws IOException, InterruptedException {
 
 			String UN=fu.readDatafrompropfile(IConstants.propfilepath, "username");
@@ -38,6 +40,13 @@ package com.vtiger.testcases;
 			wdu.maximizewindow(driver);
 			driver.get(URL);
 			wdu.implicitwait(driver);
+			
+			//LoginPage lp= PageFactory.initElements(driver,LoginPage class);
+			//lp.usernametxtfld.sendskeys("admin");
+			//driver.navigate().refresh();
+			//lp.usernametxtfld.sendkeys("admin");
+			//lp.passwordtxtfld.sendkeys("admin");
+			//lp.loginbtn.click();
 
 			driver.findElement(By.xpath("//input[@name='user_name']")).sendKeys(UN);
 			driver.findElement(By.xpath("//input[@name='user_password']")).sendKeys(PWD);

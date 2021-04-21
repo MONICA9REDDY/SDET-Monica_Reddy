@@ -3,11 +3,17 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.vtiger.testcases.Sample"/>
+      <class name="com.vtiger.testcases.LatestCreateOrg"/>
       <class name="MavenPro_TYSS.MavenPro_TYSS.DataProviderDemo"/>
       <class name="com.vtiger.testcases.NewCreateContactforOrganization"/>
+      <class name="com.vtiger.testcases.LatestOneCreateContOrg"/>
       <class name="com.vtiger.testcases.New_Create_Organization"/>
       <class name="MavenPro_TYSS.MavenPro_TYSS.DataProvider1"/>
+      <class name="com.vtiger.testcases.LatestOneCreateContact"/>
+      <class name="com.vtiger.testcases.Execution"/>
       <class name="MavenPro_TYSS.MavenPro_TYSS.AppTest"/>
+      <class name="com.vtiger.testcases.LatestCreateContOrg"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

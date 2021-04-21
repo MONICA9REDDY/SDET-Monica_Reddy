@@ -59,7 +59,16 @@ package com.vtiger.com.generics;
 			select.selectByIndex(index);
 		}
 		/**
-		 * @author AMAR-G
+		 * Select using by index
+		 * @param element
+		 * @param i
+		 */
+		public void selectUsingIndex(WebElement element, int i) {
+			Select s = new Select(element);
+			s.selectByIndex(i);
+			}
+		/**
+		 * @author Monica
 		 * Select elemet from dd by value
 		 * @param element
 		 * @param value
@@ -112,6 +121,15 @@ package com.vtiger.com.generics;
 			action.moveToElement(element).perform();
 		}
 		/**
+		 * MouseHover to an element
+		 * @param driver
+		 * @param element
+		 */
+		public void mouseHover(WebDriver driver,WebElement element) {
+			Actions a=new Actions(driver);
+			a.moveToElement(element).perform();
+		}
+		/**
 		 * Drag and Drop
 		 * @param driver
 		 * @param src
@@ -122,6 +140,27 @@ package com.vtiger.com.generics;
 			action.dragAndDrop(src, dest).perform();
 		}
 
+		/**
+		 * Switch tom desired windows
+		 * @param driver
+		 * @param windowtitleexp
+		 */
+		public void switchtowindow(WebDriver driver, String windowtitleexp) 
+		{
+			Set<String> set=driver.getWindowHandles();
+			Iterator<String> it = set.iterator();
+
+			while(it.hasNext()) 
+			{
+				String winid = it.next();
+				driver.switchTo().window(winid);
+				String acttitle = driver.getTitle();
+				if(acttitle.contains(windowtitleexp)) 
+				{
+					break;
+				}
+			}
+		}
 		/**
 		 * Switch tom desired windows
 		 * @param driver
@@ -185,6 +224,7 @@ package com.vtiger.com.generics;
 		}
 
 
+		
 	}
 
 

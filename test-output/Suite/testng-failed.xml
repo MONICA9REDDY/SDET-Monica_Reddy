@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="TestRunner-2(failed)" parallel="tests">
+    <classes>
+      <class name="com.vtiger.testcases.LatestOneCreateContOrg">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+          <include name="logintoapp"/>
+          <include name="createcontact"/>
+          <include name="beforesuite"/>
+          <include name="logoutfromApp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.vtiger.testcases.LatestOneCreateContOrg -->
+    </classes>
+  </test> <!-- TestRunner-2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
